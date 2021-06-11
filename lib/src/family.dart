@@ -10,20 +10,20 @@ enum SleekFontFamily {
 }
 
 extension SleekFontFamilyExtensions on SleekFontFamily {
-  String toFontFamily({BuildContext context, SleekTypographyData typography}) {
+  String toFontFamily({required BuildContext context, SleekTypographyData? typography}) {
     assert(context != null || typography != null);
     typography ??= SleekTypography.of(context);
     switch (this) {
       case SleekFontFamily.primary:
-        return typography.families.primary;
+        return typography!.families.primary;
       case SleekFontFamily.secondary:
-        return typography.families.secondary;
+        return typography!.families.secondary;
       case SleekFontFamily.monospace:
-        return typography.families.monospace;
+        return typography!.families.monospace;
       case SleekFontFamily.code:
-        return typography.families.code;
+        return typography!.families.code;
       default:
-        return typography.families.primary;
+        return typography!.families.primary;
     }
   }
 }

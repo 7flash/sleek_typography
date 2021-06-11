@@ -25,31 +25,31 @@ enum SleekTextPredefinedStyleLevel {
   level6,
 }
 
-extension SleekTextPredefinedStyleExtensions on SleekTextPredefinedStyle {
-  SleekTextStyle toStyle(SleekTextPredefinedStyleLevel level,
-      {BuildContext context, SleekTypographyData typography}) {
+extension SleekTextPredefinedStyleExtensions on SleekTextPredefinedStyle? {
+  SleekTextStyle toStyle(SleekTextPredefinedStyleLevel? level,
+      {required BuildContext context, SleekTypographyData? typography}) {
     assert(context != null || typography != null);
     typography ??= SleekTypography.of(context);
 
     switch (this) {
       case SleekTextPredefinedStyle.caption:
-        return typography.styles.caption.withLevel(level);
+        return typography!.styles.caption.withLevel(level);
       case SleekTextPredefinedStyle.code:
-        return typography.styles.code.withLevel(level);
+        return typography!.styles.code.withLevel(level);
       case SleekTextPredefinedStyle.blockquote:
-        return typography.styles.blockquote.withLevel(level);
+        return typography!.styles.blockquote.withLevel(level);
       case SleekTextPredefinedStyle.body:
-        return typography.styles.body.withLevel(level);
+        return typography!.styles.body.withLevel(level);
       case SleekTextPredefinedStyle.link:
-        return typography.styles.link.withLevel(level);
+        return typography!.styles.link.withLevel(level);
       case SleekTextPredefinedStyle.button:
-        return typography.styles.button.withLevel(level);
+        return typography!.styles.button.withLevel(level);
       case SleekTextPredefinedStyle.subtitle:
-        return typography.styles.subtitle.withLevel(level);
+        return typography!.styles.subtitle.withLevel(level);
       case SleekTextPredefinedStyle.title:
-        return typography.styles.title.withLevel(level);
+        return typography!.styles.title.withLevel(level);
       default:
-        return typography.styles.body.withLevel(level);
+        return typography!.styles.body.withLevel(level);
     }
   }
 }

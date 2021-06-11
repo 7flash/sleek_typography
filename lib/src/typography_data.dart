@@ -12,24 +12,24 @@ part 'typography_data.freezed.dart';
 @freezed
 abstract class SleekTypographyData with _$SleekTypographyData {
   const factory SleekTypographyData({
-    @required SleekTypographySizes sizes,
-    @required SleekTypographyWeights weights,
-    @required SleekTypographyFamilies families,
-    @required SleekTypographyStyles styles,
+    required SleekTypographySizes sizes,
+    required SleekTypographyWeights weights,
+    required SleekTypographyFamilies families,
+    required SleekTypographyStyles styles,
   }) = _SleekTypographyData;
 
   factory SleekTypographyData.fallback({
-    Color bodyColor,
-    Color linkColor,
-    Color titleColor,
-    Color codeColor,
-    Color codeBackgroundColor,
-    Color blockquoteColor,
-    Color blockquoteBackgroundColor,
-    Color blockquoteBorderColor,
-    Color subtitleColor,
-    Color bodyLightColor,
-    Color buttonColor,
+    Color? bodyColor,
+    Color? linkColor,
+    Color? titleColor,
+    Color? codeColor,
+    Color? codeBackgroundColor,
+    Color? blockquoteColor,
+    Color? blockquoteBackgroundColor,
+    Color? blockquoteBorderColor,
+    Color? subtitleColor,
+    Color? bodyLightColor,
+    Color? buttonColor,
   }) {
     bodyColor ??= const Color(0xFF010101);
     linkColor ??= const Color(0xFF5D3BE8);
@@ -61,16 +61,16 @@ abstract class SleekTypographyData with _$SleekTypographyData {
 @freezed
 abstract class SleekTypographySizes with _$SleekTypographySizes {
   const factory SleekTypographySizes({
-    @required double size1,
-    @required double size2,
-    @required double size3, // Normal
-    @required double size4,
-    @required double size5,
-    @required double size6,
-    @required double size7,
-    @required double size8,
-    @required double size9,
-    @required double size10,
+    required double size1,
+    required double size2,
+    required double size3, // Normal
+    required double size4,
+    required double size5,
+    required double size6,
+    required double size7,
+    required double size8,
+    required double size9,
+    required double size10,
   }) = _SleekTypographySizes;
 
   factory SleekTypographySizes.fromNormal(double size) {
@@ -92,51 +92,51 @@ abstract class SleekTypographySizes with _$SleekTypographySizes {
 @freezed
 abstract class SleekTypographyWeights with _$SleekTypographyWeights {
   const factory SleekTypographyWeights({
-    @required FontWeight light,
-    @required FontWeight normal,
-    @required FontWeight medium,
-    @required FontWeight bold,
+    required FontWeight light,
+    required FontWeight normal,
+    required FontWeight medium,
+    required FontWeight bold,
   }) = _SleekTypographyWeights;
 }
 
 @freezed
 abstract class SleekTypographyFamilies with _$SleekTypographyFamilies {
   const factory SleekTypographyFamilies({
-    @required String secondary,
-    @required String primary,
-    @required String code,
-    @required String monospace,
+    required String secondary,
+    required String primary,
+    required String code,
+    required String monospace,
   }) = _SleekTypographyFamilies;
 }
 
 @freezed
 abstract class SleekTypographyStyles with _$SleekTypographyStyles {
   const factory SleekTypographyStyles({
-    @required SleekTypographyStyle caption,
-    @required SleekTypographyStyle code,
-    @required SleekTypographyStyle blockquote,
-    @required SleekTypographyStyle body,
-    @required SleekTypographyStyle link,
-    @required SleekTypographyStyle button,
-    @required SleekTypographyStyle subtitle,
-    @required SleekTypographyStyle title,
+    required SleekTypographyStyle caption,
+    required SleekTypographyStyle code,
+    required SleekTypographyStyle blockquote,
+    required SleekTypographyStyle body,
+    required SleekTypographyStyle link,
+    required SleekTypographyStyle button,
+    required SleekTypographyStyle subtitle,
+    required SleekTypographyStyle title,
   }) = _SleekTypographyStyles;
 }
 
 @freezed
 abstract class SleekTypographyStyle with _$SleekTypographyStyle {
   const factory SleekTypographyStyle({
-    @required SleekTextStyle level1,
-    @required SleekTextStyle level2,
-    @required SleekTextStyle level3,
-    @required SleekTextStyle level4,
-    @required SleekTextStyle level5,
-    @required SleekTextStyle level6,
+    required SleekTextStyle level1,
+    required SleekTextStyle level2,
+    required SleekTextStyle level3,
+    required SleekTextStyle level4,
+    required SleekTextStyle level5,
+    required SleekTextStyle level6,
   }) = _SleekTypographyStyle;
 }
 
 extension SleekTypographyDataExtensions on SleekTypographyStyle {
-  SleekTextStyle withLevel(SleekTextPredefinedStyleLevel level) {
+  SleekTextStyle withLevel(SleekTextPredefinedStyleLevel? level) {
     switch (level) {
       case SleekTextPredefinedStyleLevel.level6:
         return level6;

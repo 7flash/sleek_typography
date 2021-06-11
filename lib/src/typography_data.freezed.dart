@@ -13,10 +13,10 @@ class _$SleekTypographyDataTearOff {
   const _$SleekTypographyDataTearOff();
 
   _SleekTypographyData call(
-      {@required SleekTypographySizes sizes,
-      @required SleekTypographyWeights weights,
-      @required SleekTypographyFamilies families,
-      @required SleekTypographyStyles styles}) {
+      {required SleekTypographySizes sizes,
+      required SleekTypographyWeights weights,
+      required SleekTypographyFamilies families,
+      required SleekTypographyStyles styles}) {
     return _SleekTypographyData(
       sizes: sizes,
       weights: weights,
@@ -43,10 +43,10 @@ abstract class $SleekTypographyDataCopyWith<$Res> {
           SleekTypographyData value, $Res Function(SleekTypographyData) then) =
       _$SleekTypographyDataCopyWithImpl<$Res>;
   $Res call(
-      {SleekTypographySizes sizes,
-      SleekTypographyWeights weights,
-      SleekTypographyFamilies families,
-      SleekTypographyStyles styles});
+      {SleekTypographySizes? sizes,
+      SleekTypographyWeights? weights,
+      SleekTypographyFamilies? families,
+      SleekTypographyStyles? styles});
 
   $SleekTypographySizesCopyWith<$Res> get sizes;
   $SleekTypographyWeightsCopyWith<$Res> get weights;
@@ -60,25 +60,25 @@ class _$SleekTypographyDataCopyWithImpl<$Res>
 
   final SleekTypographyData _value;
   // ignore: unused_field
-  final $Res Function(SleekTypographyData) _then;
+  final $Res Function(SleekTypographyData?) _then;
 
   @override
   $Res call({
-    Object sizes = freezed,
-    Object weights = freezed,
-    Object families = freezed,
-    Object styles = freezed,
+    Object? sizes = freezed,
+    Object? weights = freezed,
+    Object? families = freezed,
+    Object? styles = freezed,
   }) {
     return _then(_value.copyWith(
-      sizes: sizes == freezed ? _value.sizes : sizes as SleekTypographySizes,
+      sizes: sizes == freezed ? _value.sizes : sizes as SleekTypographySizes?,
       weights: weights == freezed
           ? _value.weights
-          : weights as SleekTypographyWeights,
+          : weights as SleekTypographyWeights?,
       families: families == freezed
           ? _value.families
-          : families as SleekTypographyFamilies,
+          : families as SleekTypographyFamilies?,
       styles:
-          styles == freezed ? _value.styles : styles as SleekTypographyStyles,
+          styles == freezed ? _value.styles : styles as SleekTypographyStyles?,
     ));
   }
 
@@ -130,10 +130,10 @@ abstract class _$SleekTypographyDataCopyWith<$Res>
       __$SleekTypographyDataCopyWithImpl<$Res>;
   @override
   $Res call(
-      {SleekTypographySizes sizes,
-      SleekTypographyWeights weights,
-      SleekTypographyFamilies families,
-      SleekTypographyStyles styles});
+      {SleekTypographySizes? sizes,
+      SleekTypographyWeights? weights,
+      SleekTypographyFamilies? families,
+      SleekTypographyStyles? styles});
 
   @override
   $SleekTypographySizesCopyWith<$Res> get sizes;
@@ -157,21 +157,21 @@ class __$SleekTypographyDataCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object sizes = freezed,
-    Object weights = freezed,
-    Object families = freezed,
-    Object styles = freezed,
+    Object? sizes = freezed,
+    Object? weights = freezed,
+    Object? families = freezed,
+    Object? styles = freezed,
   }) {
     return _then(_SleekTypographyData(
-      sizes: sizes == freezed ? _value.sizes : sizes as SleekTypographySizes,
+      sizes: sizes == freezed ? _value.sizes : (sizes as SleekTypographySizes?)!,
       weights: weights == freezed
           ? _value.weights
-          : weights as SleekTypographyWeights,
+          : (weights as SleekTypographyWeights?)!,
       families: families == freezed
           ? _value.families
-          : families as SleekTypographyFamilies,
+          : (families as SleekTypographyFamilies?)!,
       styles:
-          styles == freezed ? _value.styles : styles as SleekTypographyStyles,
+          styles == freezed ? _value.styles : (styles as SleekTypographyStyles?)!,
     ));
   }
 }
@@ -180,10 +180,10 @@ class _$_SleekTypographyData
     with DiagnosticableTreeMixin
     implements _SleekTypographyData {
   const _$_SleekTypographyData(
-      {@required this.sizes,
-      @required this.weights,
-      @required this.families,
-      @required this.styles})
+      {required this.sizes,
+      required this.weights,
+      required this.families,
+      required this.styles})
       : assert(sizes != null),
         assert(weights != null),
         assert(families != null),
@@ -246,10 +246,10 @@ class _$_SleekTypographyData
 
 abstract class _SleekTypographyData implements SleekTypographyData {
   const factory _SleekTypographyData(
-      {@required SleekTypographySizes sizes,
-      @required SleekTypographyWeights weights,
-      @required SleekTypographyFamilies families,
-      @required SleekTypographyStyles styles}) = _$_SleekTypographyData;
+      {required SleekTypographySizes sizes,
+      required SleekTypographyWeights weights,
+      required SleekTypographyFamilies families,
+      required SleekTypographyStyles styles}) = _$_SleekTypographyData;
 
   @override
   SleekTypographySizes get sizes;
@@ -267,16 +267,16 @@ class _$SleekTypographySizesTearOff {
   const _$SleekTypographySizesTearOff();
 
   _SleekTypographySizes call(
-      {@required double size1,
-      @required double size2,
-      @required double size3,
-      @required double size4,
-      @required double size5,
-      @required double size6,
-      @required double size7,
-      @required double size8,
-      @required double size9,
-      @required double size10}) {
+      {required double size1,
+      required double size2,
+      required double size3,
+      required double size4,
+      required double size5,
+      required double size6,
+      required double size7,
+      required double size8,
+      required double size9,
+      required double size10}) {
     return _SleekTypographySizes(
       size1: size1,
       size2: size2,
@@ -315,16 +315,16 @@ abstract class $SleekTypographySizesCopyWith<$Res> {
           $Res Function(SleekTypographySizes) then) =
       _$SleekTypographySizesCopyWithImpl<$Res>;
   $Res call(
-      {double size1,
-      double size2,
-      double size3,
-      double size4,
-      double size5,
-      double size6,
-      double size7,
-      double size8,
-      double size9,
-      double size10});
+      {double? size1,
+      double? size2,
+      double? size3,
+      double? size4,
+      double? size5,
+      double? size6,
+      double? size7,
+      double? size8,
+      double? size9,
+      double? size10});
 }
 
 class _$SleekTypographySizesCopyWithImpl<$Res>
@@ -333,32 +333,32 @@ class _$SleekTypographySizesCopyWithImpl<$Res>
 
   final SleekTypographySizes _value;
   // ignore: unused_field
-  final $Res Function(SleekTypographySizes) _then;
+  final $Res Function(SleekTypographySizes?) _then;
 
   @override
   $Res call({
-    Object size1 = freezed,
-    Object size2 = freezed,
-    Object size3 = freezed,
-    Object size4 = freezed,
-    Object size5 = freezed,
-    Object size6 = freezed,
-    Object size7 = freezed,
-    Object size8 = freezed,
-    Object size9 = freezed,
-    Object size10 = freezed,
+    Object? size1 = freezed,
+    Object? size2 = freezed,
+    Object? size3 = freezed,
+    Object? size4 = freezed,
+    Object? size5 = freezed,
+    Object? size6 = freezed,
+    Object? size7 = freezed,
+    Object? size8 = freezed,
+    Object? size9 = freezed,
+    Object? size10 = freezed,
   }) {
     return _then(_value.copyWith(
-      size1: size1 == freezed ? _value.size1 : size1 as double,
-      size2: size2 == freezed ? _value.size2 : size2 as double,
-      size3: size3 == freezed ? _value.size3 : size3 as double,
-      size4: size4 == freezed ? _value.size4 : size4 as double,
-      size5: size5 == freezed ? _value.size5 : size5 as double,
-      size6: size6 == freezed ? _value.size6 : size6 as double,
-      size7: size7 == freezed ? _value.size7 : size7 as double,
-      size8: size8 == freezed ? _value.size8 : size8 as double,
-      size9: size9 == freezed ? _value.size9 : size9 as double,
-      size10: size10 == freezed ? _value.size10 : size10 as double,
+      size1: size1 == freezed ? _value.size1 : size1 as double?,
+      size2: size2 == freezed ? _value.size2 : size2 as double?,
+      size3: size3 == freezed ? _value.size3 : size3 as double?,
+      size4: size4 == freezed ? _value.size4 : size4 as double?,
+      size5: size5 == freezed ? _value.size5 : size5 as double?,
+      size6: size6 == freezed ? _value.size6 : size6 as double?,
+      size7: size7 == freezed ? _value.size7 : size7 as double?,
+      size8: size8 == freezed ? _value.size8 : size8 as double?,
+      size9: size9 == freezed ? _value.size9 : size9 as double?,
+      size10: size10 == freezed ? _value.size10 : size10 as double?,
     ));
   }
 }
@@ -370,16 +370,16 @@ abstract class _$SleekTypographySizesCopyWith<$Res>
       __$SleekTypographySizesCopyWithImpl<$Res>;
   @override
   $Res call(
-      {double size1,
-      double size2,
-      double size3,
-      double size4,
-      double size5,
-      double size6,
-      double size7,
-      double size8,
-      double size9,
-      double size10});
+      {double? size1,
+      double? size2,
+      double? size3,
+      double? size4,
+      double? size5,
+      double? size6,
+      double? size7,
+      double? size8,
+      double? size9,
+      double? size10});
 }
 
 class __$SleekTypographySizesCopyWithImpl<$Res>
@@ -394,28 +394,28 @@ class __$SleekTypographySizesCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object size1 = freezed,
-    Object size2 = freezed,
-    Object size3 = freezed,
-    Object size4 = freezed,
-    Object size5 = freezed,
-    Object size6 = freezed,
-    Object size7 = freezed,
-    Object size8 = freezed,
-    Object size9 = freezed,
-    Object size10 = freezed,
+    Object? size1 = freezed,
+    Object? size2 = freezed,
+    Object? size3 = freezed,
+    Object? size4 = freezed,
+    Object? size5 = freezed,
+    Object? size6 = freezed,
+    Object? size7 = freezed,
+    Object? size8 = freezed,
+    Object? size9 = freezed,
+    Object? size10 = freezed,
   }) {
     return _then(_SleekTypographySizes(
-      size1: size1 == freezed ? _value.size1 : size1 as double,
-      size2: size2 == freezed ? _value.size2 : size2 as double,
-      size3: size3 == freezed ? _value.size3 : size3 as double,
-      size4: size4 == freezed ? _value.size4 : size4 as double,
-      size5: size5 == freezed ? _value.size5 : size5 as double,
-      size6: size6 == freezed ? _value.size6 : size6 as double,
-      size7: size7 == freezed ? _value.size7 : size7 as double,
-      size8: size8 == freezed ? _value.size8 : size8 as double,
-      size9: size9 == freezed ? _value.size9 : size9 as double,
-      size10: size10 == freezed ? _value.size10 : size10 as double,
+      size1: size1 == freezed ? _value.size1 : (size1 as double?)!,
+      size2: size2 == freezed ? _value.size2 : (size2 as double?)!,
+      size3: size3 == freezed ? _value.size3 : (size3 as double?)!,
+      size4: size4 == freezed ? _value.size4 : (size4 as double?)!,
+      size5: size5 == freezed ? _value.size5 : (size5 as double?)!,
+      size6: size6 == freezed ? _value.size6 : (size6 as double?)!,
+      size7: size7 == freezed ? _value.size7 : (size7 as double?)!,
+      size8: size8 == freezed ? _value.size8 : (size8 as double?)!,
+      size9: size9 == freezed ? _value.size9 : (size9 as double?)!,
+      size10: size10 == freezed ? _value.size10 : (size10 as double?)!,
     ));
   }
 }
@@ -424,16 +424,16 @@ class _$_SleekTypographySizes
     with DiagnosticableTreeMixin
     implements _SleekTypographySizes {
   const _$_SleekTypographySizes(
-      {@required this.size1,
-      @required this.size2,
-      @required this.size3,
-      @required this.size4,
-      @required this.size5,
-      @required this.size6,
-      @required this.size7,
-      @required this.size8,
-      @required this.size9,
-      @required this.size10})
+      {required this.size1,
+      required this.size2,
+      required this.size3,
+      required this.size4,
+      required this.size5,
+      required this.size6,
+      required this.size7,
+      required this.size8,
+      required this.size9,
+      required this.size10})
       : assert(size1 != null),
         assert(size2 != null),
         assert(size3 != null),
@@ -536,16 +536,16 @@ class _$_SleekTypographySizes
 
 abstract class _SleekTypographySizes implements SleekTypographySizes {
   const factory _SleekTypographySizes(
-      {@required double size1,
-      @required double size2,
-      @required double size3,
-      @required double size4,
-      @required double size5,
-      @required double size6,
-      @required double size7,
-      @required double size8,
-      @required double size9,
-      @required double size10}) = _$_SleekTypographySizes;
+      {required double size1,
+      required double size2,
+      required double size3,
+      required double size4,
+      required double size5,
+      required double size6,
+      required double size7,
+      required double size8,
+      required double size9,
+      required double size10}) = _$_SleekTypographySizes;
 
   @override
   double get size1;
@@ -575,10 +575,10 @@ class _$SleekTypographyWeightsTearOff {
   const _$SleekTypographyWeightsTearOff();
 
   _SleekTypographyWeights call(
-      {@required FontWeight light,
-      @required FontWeight normal,
-      @required FontWeight medium,
-      @required FontWeight bold}) {
+      {required FontWeight light,
+      required FontWeight normal,
+      required FontWeight medium,
+      required FontWeight bold}) {
     return _SleekTypographyWeights(
       light: light,
       normal: normal,
@@ -605,10 +605,10 @@ abstract class $SleekTypographyWeightsCopyWith<$Res> {
           $Res Function(SleekTypographyWeights) then) =
       _$SleekTypographyWeightsCopyWithImpl<$Res>;
   $Res call(
-      {FontWeight light,
-      FontWeight normal,
-      FontWeight medium,
-      FontWeight bold});
+      {FontWeight? light,
+      FontWeight? normal,
+      FontWeight? medium,
+      FontWeight? bold});
 }
 
 class _$SleekTypographyWeightsCopyWithImpl<$Res>
@@ -617,20 +617,20 @@ class _$SleekTypographyWeightsCopyWithImpl<$Res>
 
   final SleekTypographyWeights _value;
   // ignore: unused_field
-  final $Res Function(SleekTypographyWeights) _then;
+  final $Res Function(SleekTypographyWeights?) _then;
 
   @override
   $Res call({
-    Object light = freezed,
-    Object normal = freezed,
-    Object medium = freezed,
-    Object bold = freezed,
+    Object? light = freezed,
+    Object? normal = freezed,
+    Object? medium = freezed,
+    Object? bold = freezed,
   }) {
     return _then(_value.copyWith(
-      light: light == freezed ? _value.light : light as FontWeight,
-      normal: normal == freezed ? _value.normal : normal as FontWeight,
-      medium: medium == freezed ? _value.medium : medium as FontWeight,
-      bold: bold == freezed ? _value.bold : bold as FontWeight,
+      light: light == freezed ? _value.light : light as FontWeight?,
+      normal: normal == freezed ? _value.normal : normal as FontWeight?,
+      medium: medium == freezed ? _value.medium : medium as FontWeight?,
+      bold: bold == freezed ? _value.bold : bold as FontWeight?,
     ));
   }
 }
@@ -642,10 +642,10 @@ abstract class _$SleekTypographyWeightsCopyWith<$Res>
       __$SleekTypographyWeightsCopyWithImpl<$Res>;
   @override
   $Res call(
-      {FontWeight light,
-      FontWeight normal,
-      FontWeight medium,
-      FontWeight bold});
+      {FontWeight? light,
+      FontWeight? normal,
+      FontWeight? medium,
+      FontWeight? bold});
 }
 
 class __$SleekTypographyWeightsCopyWithImpl<$Res>
@@ -660,16 +660,16 @@ class __$SleekTypographyWeightsCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object light = freezed,
-    Object normal = freezed,
-    Object medium = freezed,
-    Object bold = freezed,
+    Object? light = freezed,
+    Object? normal = freezed,
+    Object? medium = freezed,
+    Object? bold = freezed,
   }) {
     return _then(_SleekTypographyWeights(
-      light: light == freezed ? _value.light : light as FontWeight,
-      normal: normal == freezed ? _value.normal : normal as FontWeight,
-      medium: medium == freezed ? _value.medium : medium as FontWeight,
-      bold: bold == freezed ? _value.bold : bold as FontWeight,
+      light: light == freezed ? _value.light : (light as FontWeight?)!,
+      normal: normal == freezed ? _value.normal : (normal as FontWeight?)!,
+      medium: medium == freezed ? _value.medium : (medium as FontWeight?)!,
+      bold: bold == freezed ? _value.bold : (bold as FontWeight?)!,
     ));
   }
 }
@@ -678,10 +678,10 @@ class _$_SleekTypographyWeights
     with DiagnosticableTreeMixin
     implements _SleekTypographyWeights {
   const _$_SleekTypographyWeights(
-      {@required this.light,
-      @required this.normal,
-      @required this.medium,
-      @required this.bold})
+      {required this.light,
+      required this.normal,
+      required this.medium,
+      required this.bold})
       : assert(light != null),
         assert(normal != null),
         assert(medium != null),
@@ -742,10 +742,10 @@ class _$_SleekTypographyWeights
 
 abstract class _SleekTypographyWeights implements SleekTypographyWeights {
   const factory _SleekTypographyWeights(
-      {@required FontWeight light,
-      @required FontWeight normal,
-      @required FontWeight medium,
-      @required FontWeight bold}) = _$_SleekTypographyWeights;
+      {required FontWeight light,
+      required FontWeight normal,
+      required FontWeight medium,
+      required FontWeight bold}) = _$_SleekTypographyWeights;
 
   @override
   FontWeight get light;
@@ -763,10 +763,10 @@ class _$SleekTypographyFamiliesTearOff {
   const _$SleekTypographyFamiliesTearOff();
 
   _SleekTypographyFamilies call(
-      {@required String secondary,
-      @required String primary,
-      @required String code,
-      @required String monospace}) {
+      {required String secondary,
+      required String primary,
+      required String code,
+      required String monospace}) {
     return _SleekTypographyFamilies(
       secondary: secondary,
       primary: primary,
@@ -792,7 +792,7 @@ abstract class $SleekTypographyFamiliesCopyWith<$Res> {
   factory $SleekTypographyFamiliesCopyWith(SleekTypographyFamilies value,
           $Res Function(SleekTypographyFamilies) then) =
       _$SleekTypographyFamiliesCopyWithImpl<$Res>;
-  $Res call({String secondary, String primary, String code, String monospace});
+  $Res call({String? secondary, String? primary, String? code, String? monospace});
 }
 
 class _$SleekTypographyFamiliesCopyWithImpl<$Res>
@@ -801,20 +801,20 @@ class _$SleekTypographyFamiliesCopyWithImpl<$Res>
 
   final SleekTypographyFamilies _value;
   // ignore: unused_field
-  final $Res Function(SleekTypographyFamilies) _then;
+  final $Res Function(SleekTypographyFamilies?) _then;
 
   @override
   $Res call({
-    Object secondary = freezed,
-    Object primary = freezed,
-    Object code = freezed,
-    Object monospace = freezed,
+    Object? secondary = freezed,
+    Object? primary = freezed,
+    Object? code = freezed,
+    Object? monospace = freezed,
   }) {
     return _then(_value.copyWith(
-      secondary: secondary == freezed ? _value.secondary : secondary as String,
-      primary: primary == freezed ? _value.primary : primary as String,
-      code: code == freezed ? _value.code : code as String,
-      monospace: monospace == freezed ? _value.monospace : monospace as String,
+      secondary: secondary == freezed ? _value.secondary : secondary as String?,
+      primary: primary == freezed ? _value.primary : primary as String?,
+      code: code == freezed ? _value.code : code as String?,
+      monospace: monospace == freezed ? _value.monospace : monospace as String?,
     ));
   }
 }
@@ -825,7 +825,7 @@ abstract class _$SleekTypographyFamiliesCopyWith<$Res>
           $Res Function(_SleekTypographyFamilies) then) =
       __$SleekTypographyFamiliesCopyWithImpl<$Res>;
   @override
-  $Res call({String secondary, String primary, String code, String monospace});
+  $Res call({String? secondary, String? primary, String? code, String? monospace});
 }
 
 class __$SleekTypographyFamiliesCopyWithImpl<$Res>
@@ -841,16 +841,16 @@ class __$SleekTypographyFamiliesCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object secondary = freezed,
-    Object primary = freezed,
-    Object code = freezed,
-    Object monospace = freezed,
+    Object? secondary = freezed,
+    Object? primary = freezed,
+    Object? code = freezed,
+    Object? monospace = freezed,
   }) {
     return _then(_SleekTypographyFamilies(
-      secondary: secondary == freezed ? _value.secondary : secondary as String,
-      primary: primary == freezed ? _value.primary : primary as String,
-      code: code == freezed ? _value.code : code as String,
-      monospace: monospace == freezed ? _value.monospace : monospace as String,
+      secondary: secondary == freezed ? _value.secondary : (secondary as String?)!,
+      primary: primary == freezed ? _value.primary : (primary as String?)!,
+      code: code == freezed ? _value.code : (code as String?)!,
+      monospace: monospace == freezed ? _value.monospace : (monospace as String?)!,
     ));
   }
 }
@@ -859,10 +859,10 @@ class _$_SleekTypographyFamilies
     with DiagnosticableTreeMixin
     implements _SleekTypographyFamilies {
   const _$_SleekTypographyFamilies(
-      {@required this.secondary,
-      @required this.primary,
-      @required this.code,
-      @required this.monospace})
+      {required this.secondary,
+      required this.primary,
+      required this.code,
+      required this.monospace})
       : assert(secondary != null),
         assert(primary != null),
         assert(code != null),
@@ -926,10 +926,10 @@ class _$_SleekTypographyFamilies
 
 abstract class _SleekTypographyFamilies implements SleekTypographyFamilies {
   const factory _SleekTypographyFamilies(
-      {@required String secondary,
-      @required String primary,
-      @required String code,
-      @required String monospace}) = _$_SleekTypographyFamilies;
+      {required String secondary,
+      required String primary,
+      required String code,
+      required String monospace}) = _$_SleekTypographyFamilies;
 
   @override
   String get secondary;
@@ -947,14 +947,14 @@ class _$SleekTypographyStylesTearOff {
   const _$SleekTypographyStylesTearOff();
 
   _SleekTypographyStyles call(
-      {@required SleekTypographyStyle caption,
-      @required SleekTypographyStyle code,
-      @required SleekTypographyStyle blockquote,
-      @required SleekTypographyStyle body,
-      @required SleekTypographyStyle link,
-      @required SleekTypographyStyle button,
-      @required SleekTypographyStyle subtitle,
-      @required SleekTypographyStyle title}) {
+      {required SleekTypographyStyle caption,
+      required SleekTypographyStyle code,
+      required SleekTypographyStyle blockquote,
+      required SleekTypographyStyle body,
+      required SleekTypographyStyle link,
+      required SleekTypographyStyle button,
+      required SleekTypographyStyle subtitle,
+      required SleekTypographyStyle title}) {
     return _SleekTypographyStyles(
       caption: caption,
       code: code,
@@ -989,14 +989,14 @@ abstract class $SleekTypographyStylesCopyWith<$Res> {
           $Res Function(SleekTypographyStyles) then) =
       _$SleekTypographyStylesCopyWithImpl<$Res>;
   $Res call(
-      {SleekTypographyStyle caption,
-      SleekTypographyStyle code,
-      SleekTypographyStyle blockquote,
-      SleekTypographyStyle body,
-      SleekTypographyStyle link,
-      SleekTypographyStyle button,
-      SleekTypographyStyle subtitle,
-      SleekTypographyStyle title});
+      {SleekTypographyStyle? caption,
+      SleekTypographyStyle? code,
+      SleekTypographyStyle? blockquote,
+      SleekTypographyStyle? body,
+      SleekTypographyStyle? link,
+      SleekTypographyStyle? button,
+      SleekTypographyStyle? subtitle,
+      SleekTypographyStyle? title});
 
   $SleekTypographyStyleCopyWith<$Res> get caption;
   $SleekTypographyStyleCopyWith<$Res> get code;
@@ -1014,34 +1014,34 @@ class _$SleekTypographyStylesCopyWithImpl<$Res>
 
   final SleekTypographyStyles _value;
   // ignore: unused_field
-  final $Res Function(SleekTypographyStyles) _then;
+  final $Res Function(SleekTypographyStyles?) _then;
 
   @override
   $Res call({
-    Object caption = freezed,
-    Object code = freezed,
-    Object blockquote = freezed,
-    Object body = freezed,
-    Object link = freezed,
-    Object button = freezed,
-    Object subtitle = freezed,
-    Object title = freezed,
+    Object? caption = freezed,
+    Object? code = freezed,
+    Object? blockquote = freezed,
+    Object? body = freezed,
+    Object? link = freezed,
+    Object? button = freezed,
+    Object? subtitle = freezed,
+    Object? title = freezed,
   }) {
     return _then(_value.copyWith(
       caption:
-          caption == freezed ? _value.caption : caption as SleekTypographyStyle,
-      code: code == freezed ? _value.code : code as SleekTypographyStyle,
+          caption == freezed ? _value.caption : caption as SleekTypographyStyle?,
+      code: code == freezed ? _value.code : code as SleekTypographyStyle?,
       blockquote: blockquote == freezed
           ? _value.blockquote
-          : blockquote as SleekTypographyStyle,
-      body: body == freezed ? _value.body : body as SleekTypographyStyle,
-      link: link == freezed ? _value.link : link as SleekTypographyStyle,
+          : blockquote as SleekTypographyStyle?,
+      body: body == freezed ? _value.body : body as SleekTypographyStyle?,
+      link: link == freezed ? _value.link : link as SleekTypographyStyle?,
       button:
-          button == freezed ? _value.button : button as SleekTypographyStyle,
+          button == freezed ? _value.button : button as SleekTypographyStyle?,
       subtitle: subtitle == freezed
           ? _value.subtitle
-          : subtitle as SleekTypographyStyle,
-      title: title == freezed ? _value.title : title as SleekTypographyStyle,
+          : subtitle as SleekTypographyStyle?,
+      title: title == freezed ? _value.title : title as SleekTypographyStyle?,
     ));
   }
 
@@ -1133,14 +1133,14 @@ abstract class _$SleekTypographyStylesCopyWith<$Res>
       __$SleekTypographyStylesCopyWithImpl<$Res>;
   @override
   $Res call(
-      {SleekTypographyStyle caption,
-      SleekTypographyStyle code,
-      SleekTypographyStyle blockquote,
-      SleekTypographyStyle body,
-      SleekTypographyStyle link,
-      SleekTypographyStyle button,
-      SleekTypographyStyle subtitle,
-      SleekTypographyStyle title});
+      {SleekTypographyStyle? caption,
+      SleekTypographyStyle? code,
+      SleekTypographyStyle? blockquote,
+      SleekTypographyStyle? body,
+      SleekTypographyStyle? link,
+      SleekTypographyStyle? button,
+      SleekTypographyStyle? subtitle,
+      SleekTypographyStyle? title});
 
   @override
   $SleekTypographyStyleCopyWith<$Res> get caption;
@@ -1172,30 +1172,30 @@ class __$SleekTypographyStylesCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object caption = freezed,
-    Object code = freezed,
-    Object blockquote = freezed,
-    Object body = freezed,
-    Object link = freezed,
-    Object button = freezed,
-    Object subtitle = freezed,
-    Object title = freezed,
+    Object? caption = freezed,
+    Object? code = freezed,
+    Object? blockquote = freezed,
+    Object? body = freezed,
+    Object? link = freezed,
+    Object? button = freezed,
+    Object? subtitle = freezed,
+    Object? title = freezed,
   }) {
     return _then(_SleekTypographyStyles(
       caption:
-          caption == freezed ? _value.caption : caption as SleekTypographyStyle,
-      code: code == freezed ? _value.code : code as SleekTypographyStyle,
+          caption == freezed ? _value.caption : (caption as SleekTypographyStyle?)!,
+      code: code == freezed ? _value.code : (code as SleekTypographyStyle?)!,
       blockquote: blockquote == freezed
           ? _value.blockquote
-          : blockquote as SleekTypographyStyle,
-      body: body == freezed ? _value.body : body as SleekTypographyStyle,
-      link: link == freezed ? _value.link : link as SleekTypographyStyle,
+          : (blockquote as SleekTypographyStyle?)!,
+      body: body == freezed ? _value.body : (body as SleekTypographyStyle?)!,
+      link: link == freezed ? _value.link : (link as SleekTypographyStyle?)!,
       button:
-          button == freezed ? _value.button : button as SleekTypographyStyle,
+          button == freezed ? _value.button : (button as SleekTypographyStyle?)!,
       subtitle: subtitle == freezed
           ? _value.subtitle
-          : subtitle as SleekTypographyStyle,
-      title: title == freezed ? _value.title : title as SleekTypographyStyle,
+          : (subtitle as SleekTypographyStyle?)!,
+      title: title == freezed ? _value.title : (title as SleekTypographyStyle?)!,
     ));
   }
 }
@@ -1204,14 +1204,14 @@ class _$_SleekTypographyStyles
     with DiagnosticableTreeMixin
     implements _SleekTypographyStyles {
   const _$_SleekTypographyStyles(
-      {@required this.caption,
-      @required this.code,
-      @required this.blockquote,
-      @required this.body,
-      @required this.link,
-      @required this.button,
-      @required this.subtitle,
-      @required this.title})
+      {required this.caption,
+      required this.code,
+      required this.blockquote,
+      required this.body,
+      required this.link,
+      required this.button,
+      required this.subtitle,
+      required this.title})
       : assert(caption != null),
         assert(code != null),
         assert(blockquote != null),
@@ -1303,14 +1303,14 @@ class _$_SleekTypographyStyles
 
 abstract class _SleekTypographyStyles implements SleekTypographyStyles {
   const factory _SleekTypographyStyles(
-      {@required SleekTypographyStyle caption,
-      @required SleekTypographyStyle code,
-      @required SleekTypographyStyle blockquote,
-      @required SleekTypographyStyle body,
-      @required SleekTypographyStyle link,
-      @required SleekTypographyStyle button,
-      @required SleekTypographyStyle subtitle,
-      @required SleekTypographyStyle title}) = _$_SleekTypographyStyles;
+      {required SleekTypographyStyle caption,
+      required SleekTypographyStyle code,
+      required SleekTypographyStyle blockquote,
+      required SleekTypographyStyle body,
+      required SleekTypographyStyle link,
+      required SleekTypographyStyle button,
+      required SleekTypographyStyle subtitle,
+      required SleekTypographyStyle title}) = _$_SleekTypographyStyles;
 
   @override
   SleekTypographyStyle get caption;
@@ -1336,12 +1336,12 @@ class _$SleekTypographyStyleTearOff {
   const _$SleekTypographyStyleTearOff();
 
   _SleekTypographyStyle call(
-      {@required SleekTextStyle level1,
-      @required SleekTextStyle level2,
-      @required SleekTextStyle level3,
-      @required SleekTextStyle level4,
-      @required SleekTextStyle level5,
-      @required SleekTextStyle level6}) {
+      {required SleekTextStyle level1,
+      required SleekTextStyle level2,
+      required SleekTextStyle level3,
+      required SleekTextStyle level4,
+      required SleekTextStyle level5,
+      required SleekTextStyle level6}) {
     return _SleekTypographyStyle(
       level1: level1,
       level2: level2,
@@ -1372,12 +1372,12 @@ abstract class $SleekTypographyStyleCopyWith<$Res> {
           $Res Function(SleekTypographyStyle) then) =
       _$SleekTypographyStyleCopyWithImpl<$Res>;
   $Res call(
-      {SleekTextStyle level1,
-      SleekTextStyle level2,
-      SleekTextStyle level3,
-      SleekTextStyle level4,
-      SleekTextStyle level5,
-      SleekTextStyle level6});
+      {SleekTextStyle? level1,
+      SleekTextStyle? level2,
+      SleekTextStyle? level3,
+      SleekTextStyle? level4,
+      SleekTextStyle? level5,
+      SleekTextStyle? level6});
 
   $SleekTextStyleCopyWith<$Res> get level1;
   $SleekTextStyleCopyWith<$Res> get level2;
@@ -1393,24 +1393,24 @@ class _$SleekTypographyStyleCopyWithImpl<$Res>
 
   final SleekTypographyStyle _value;
   // ignore: unused_field
-  final $Res Function(SleekTypographyStyle) _then;
+  final $Res Function(SleekTypographyStyle?) _then;
 
   @override
   $Res call({
-    Object level1 = freezed,
-    Object level2 = freezed,
-    Object level3 = freezed,
-    Object level4 = freezed,
-    Object level5 = freezed,
-    Object level6 = freezed,
+    Object? level1 = freezed,
+    Object? level2 = freezed,
+    Object? level3 = freezed,
+    Object? level4 = freezed,
+    Object? level5 = freezed,
+    Object? level6 = freezed,
   }) {
     return _then(_value.copyWith(
-      level1: level1 == freezed ? _value.level1 : level1 as SleekTextStyle,
-      level2: level2 == freezed ? _value.level2 : level2 as SleekTextStyle,
-      level3: level3 == freezed ? _value.level3 : level3 as SleekTextStyle,
-      level4: level4 == freezed ? _value.level4 : level4 as SleekTextStyle,
-      level5: level5 == freezed ? _value.level5 : level5 as SleekTextStyle,
-      level6: level6 == freezed ? _value.level6 : level6 as SleekTextStyle,
+      level1: level1 == freezed ? _value.level1 : level1 as SleekTextStyle?,
+      level2: level2 == freezed ? _value.level2 : level2 as SleekTextStyle?,
+      level3: level3 == freezed ? _value.level3 : level3 as SleekTextStyle?,
+      level4: level4 == freezed ? _value.level4 : level4 as SleekTextStyle?,
+      level5: level5 == freezed ? _value.level5 : level5 as SleekTextStyle?,
+      level6: level6 == freezed ? _value.level6 : level6 as SleekTextStyle?,
     ));
   }
 
@@ -1482,12 +1482,12 @@ abstract class _$SleekTypographyStyleCopyWith<$Res>
       __$SleekTypographyStyleCopyWithImpl<$Res>;
   @override
   $Res call(
-      {SleekTextStyle level1,
-      SleekTextStyle level2,
-      SleekTextStyle level3,
-      SleekTextStyle level4,
-      SleekTextStyle level5,
-      SleekTextStyle level6});
+      {SleekTextStyle? level1,
+      SleekTextStyle? level2,
+      SleekTextStyle? level3,
+      SleekTextStyle? level4,
+      SleekTextStyle? level5,
+      SleekTextStyle? level6});
 
   @override
   $SleekTextStyleCopyWith<$Res> get level1;
@@ -1515,20 +1515,20 @@ class __$SleekTypographyStyleCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object level1 = freezed,
-    Object level2 = freezed,
-    Object level3 = freezed,
-    Object level4 = freezed,
-    Object level5 = freezed,
-    Object level6 = freezed,
+    Object? level1 = freezed,
+    Object? level2 = freezed,
+    Object? level3 = freezed,
+    Object? level4 = freezed,
+    Object? level5 = freezed,
+    Object? level6 = freezed,
   }) {
     return _then(_SleekTypographyStyle(
-      level1: level1 == freezed ? _value.level1 : level1 as SleekTextStyle,
-      level2: level2 == freezed ? _value.level2 : level2 as SleekTextStyle,
-      level3: level3 == freezed ? _value.level3 : level3 as SleekTextStyle,
-      level4: level4 == freezed ? _value.level4 : level4 as SleekTextStyle,
-      level5: level5 == freezed ? _value.level5 : level5 as SleekTextStyle,
-      level6: level6 == freezed ? _value.level6 : level6 as SleekTextStyle,
+      level1: level1 == freezed ? _value.level1 : (level1 as SleekTextStyle?)!,
+      level2: level2 == freezed ? _value.level2 : (level2 as SleekTextStyle?)!,
+      level3: level3 == freezed ? _value.level3 : (level3 as SleekTextStyle?)!,
+      level4: level4 == freezed ? _value.level4 : (level4 as SleekTextStyle?)!,
+      level5: level5 == freezed ? _value.level5 : (level5 as SleekTextStyle?)!,
+      level6: level6 == freezed ? _value.level6 : (level6 as SleekTextStyle?)!,
     ));
   }
 }
@@ -1537,12 +1537,12 @@ class _$_SleekTypographyStyle
     with DiagnosticableTreeMixin
     implements _SleekTypographyStyle {
   const _$_SleekTypographyStyle(
-      {@required this.level1,
-      @required this.level2,
-      @required this.level3,
-      @required this.level4,
-      @required this.level5,
-      @required this.level6})
+      {required this.level1,
+      required this.level2,
+      required this.level3,
+      required this.level4,
+      required this.level5,
+      required this.level6})
       : assert(level1 != null),
         assert(level2 != null),
         assert(level3 != null),
@@ -1617,12 +1617,12 @@ class _$_SleekTypographyStyle
 
 abstract class _SleekTypographyStyle implements SleekTypographyStyle {
   const factory _SleekTypographyStyle(
-      {@required SleekTextStyle level1,
-      @required SleekTextStyle level2,
-      @required SleekTextStyle level3,
-      @required SleekTextStyle level4,
-      @required SleekTextStyle level5,
-      @required SleekTextStyle level6}) = _$_SleekTypographyStyle;
+      {required SleekTextStyle level1,
+      required SleekTextStyle level2,
+      required SleekTextStyle level3,
+      required SleekTextStyle level4,
+      required SleekTextStyle level5,
+      required SleekTextStyle level6}) = _$_SleekTypographyStyle;
 
   @override
   SleekTextStyle get level1;

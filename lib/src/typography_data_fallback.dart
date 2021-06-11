@@ -6,17 +6,17 @@ import 'package:sleek_typography/src/typography_data.dart';
 import 'family.dart';
 
 SleekTypographyData fallbackTypography({
-  @required Color bodyColor,
-  @required Color linkColor,
-  @required Color titleColor,
-  @required Color codeColor,
-  @required Color blockquoteColor,
-  @required Color blockquoteBackgroundColor,
-  @required Color codeBackgroundColor,
-  @required Color blockquoteBorderColor,
-  @required Color subtitleColor,
-  @required Color bodyLightColor,
-  @required Color buttonColor,
+  required Color bodyColor,
+  required Color linkColor,
+  required Color titleColor,
+  required Color codeColor,
+  required Color blockquoteColor,
+  required Color blockquoteBackgroundColor,
+  required Color codeBackgroundColor,
+  required Color blockquoteBorderColor,
+  required Color subtitleColor,
+  required Color bodyLightColor,
+  required Color buttonColor,
 }) {
   return SleekTypographyData(
     sizes: sleekDefaultTypographySizes,
@@ -39,17 +39,17 @@ SleekTypographyData fallbackTypography({
 }
 
 SleekTypographyStyles fallbackStyles({
-  @required Color bodyColor,
-  @required Color linkColor,
-  @required Color titleColor,
-  @required Color codeColor,
-  @required Color codeBackgroundColor,
-  @required Color blockquoteColor,
-  @required Color blockquoteBackgroundColor,
-  @required Color blockquoteBorderColor,
-  @required Color subtitleColor,
-  @required Color bodyLightColor,
-  @required Color buttonColor,
+  required Color bodyColor,
+  required Color linkColor,
+  required Color titleColor,
+  required Color codeColor,
+  required Color codeBackgroundColor,
+  required Color blockquoteColor,
+  required Color blockquoteBackgroundColor,
+  required Color blockquoteBorderColor,
+  required Color subtitleColor,
+  required Color bodyLightColor,
+  required Color buttonColor,
 }) {
   return SleekTypographyStyles(
     body: SleekTypographyStyle(
@@ -350,15 +350,15 @@ const sleekDefaultTypographySizes = SleekTypographySizes(
 
 class SleekFallbackCode extends StatelessWidget {
   final Widget child;
-  final EdgeInsets padding;
-  final Color backgroundColor;
-  final double borderRadius;
+  final EdgeInsets? padding;
+  final Color? backgroundColor;
+  final double? borderRadius;
 
   SleekFallbackCode({
     this.backgroundColor,
     this.padding,
     this.borderRadius,
-    @required this.child,
+    required this.child,
   });
 
   @override
@@ -367,19 +367,19 @@ class SleekFallbackCode extends StatelessWidget {
       padding: padding,
       decoration: BoxDecoration(
           color: backgroundColor,
-          borderRadius: BorderRadius.circular(borderRadius)),
+          borderRadius: BorderRadius.circular(borderRadius!)),
       child: child,
     );
   }
 }
 
 class SleekFallbackBlockQuote extends StatelessWidget {
-  final Color backgroundColor;
-  final Color borderColor;
+  final Color? backgroundColor;
+  final Color? borderColor;
   final Widget child;
-  final double borderRadius;
-  final double borderWidth;
-  final EdgeInsets padding;
+  final double? borderRadius;
+  final double? borderWidth;
+  final EdgeInsets? padding;
 
   SleekFallbackBlockQuote({
     this.backgroundColor,
@@ -387,21 +387,21 @@ class SleekFallbackBlockQuote extends StatelessWidget {
     this.padding,
     this.borderRadius,
     this.borderWidth,
-    @required this.child,
+    required this.child,
   });
 
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(borderRadius),
+      borderRadius: BorderRadius.circular(borderRadius!),
       child: Container(
         padding: padding,
         decoration: BoxDecoration(
           color: backgroundColor,
           border: Border(
             left: BorderSide(
-              color: borderColor,
-              width: borderWidth,
+              color: borderColor!,
+              width: borderWidth!,
             ),
           ),
         ),

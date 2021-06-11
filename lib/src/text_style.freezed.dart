@@ -13,20 +13,20 @@ class _$SleekTextStyleTearOff {
   const _$SleekTextStyleTearOff();
 
   _SleekTextStyle call(
-      {@nullable Color color,
-      @nullable TextAlign textAlign,
-      @nullable TextDirection textDirection,
-      @nullable TextDecorationStyle textDecorationStyle,
-      @nullable double textDecorationThickness,
-      @nullable Color textDecorationColor,
-      @nullable SleekTextPredefinedStyle predefinedStyle,
-      @nullable SleekTextPredefinedStyleLevel predefinedLevel,
-      @nullable TextDecoration textDecoration,
-      @nullable double letterSpacing,
-      @nullable SleekFontSize size,
-      @nullable SleekFontWeight weight,
-      @nullable SleekFontFamily family,
-      @nullable Widget Function(BuildContext, Widget) builder}) {
+      {@nullable Color? color,
+      @nullable TextAlign? textAlign,
+      @nullable TextDirection? textDirection,
+      @nullable TextDecorationStyle? textDecorationStyle,
+      @nullable double? textDecorationThickness,
+      @nullable Color? textDecorationColor,
+      @nullable SleekTextPredefinedStyle? predefinedStyle,
+      @nullable SleekTextPredefinedStyleLevel? predefinedLevel,
+      @nullable TextDecoration? textDecoration,
+      @nullable double? letterSpacing,
+      @nullable SleekFontSize? size,
+      @nullable SleekFontWeight? weight,
+      @nullable SleekFontFamily? family,
+      @nullable Widget Function(BuildContext, Widget)? builder}) {
     return _SleekTextStyle(
       color: color,
       textAlign: textAlign,
@@ -51,33 +51,33 @@ const $SleekTextStyle = _$SleekTextStyleTearOff();
 
 mixin _$SleekTextStyle {
   @nullable
-  Color get color;
+  Color? get color;
   @nullable
-  TextAlign get textAlign;
+  TextAlign? get textAlign;
   @nullable
-  TextDirection get textDirection;
+  TextDirection? get textDirection;
   @nullable
-  TextDecorationStyle get textDecorationStyle;
+  TextDecorationStyle? get textDecorationStyle;
   @nullable
-  double get textDecorationThickness;
+  double? get textDecorationThickness;
   @nullable
-  Color get textDecorationColor;
+  Color? get textDecorationColor;
   @nullable
-  SleekTextPredefinedStyle get predefinedStyle;
+  SleekTextPredefinedStyle? get predefinedStyle;
   @nullable
-  SleekTextPredefinedStyleLevel get predefinedLevel;
+  SleekTextPredefinedStyleLevel? get predefinedLevel;
   @nullable
-  TextDecoration get textDecoration;
+  TextDecoration? get textDecoration;
   @nullable
-  double get letterSpacing;
+  double? get letterSpacing;
   @nullable
-  SleekFontSize get size;
+  SleekFontSize? get size;
   @nullable
-  SleekFontWeight get weight;
+  SleekFontWeight? get weight;
   @nullable
-  SleekFontFamily get family;
+  SleekFontFamily? get family;
   @nullable
-  Widget Function(BuildContext, Widget) get builder;
+  Widget Function(BuildContext, Widget)? get builder;
 
   $SleekTextStyleCopyWith<SleekTextStyle> get copyWith;
 }
@@ -87,20 +87,20 @@ abstract class $SleekTextStyleCopyWith<$Res> {
           SleekTextStyle value, $Res Function(SleekTextStyle) then) =
       _$SleekTextStyleCopyWithImpl<$Res>;
   $Res call(
-      {@nullable Color color,
-      @nullable TextAlign textAlign,
-      @nullable TextDirection textDirection,
-      @nullable TextDecorationStyle textDecorationStyle,
-      @nullable double textDecorationThickness,
-      @nullable Color textDecorationColor,
-      @nullable SleekTextPredefinedStyle predefinedStyle,
-      @nullable SleekTextPredefinedStyleLevel predefinedLevel,
-      @nullable TextDecoration textDecoration,
-      @nullable double letterSpacing,
-      @nullable SleekFontSize size,
-      @nullable SleekFontWeight weight,
-      @nullable SleekFontFamily family,
-      @nullable Widget Function(BuildContext, Widget) builder});
+      {@nullable Color? color,
+      @nullable TextAlign? textAlign,
+      @nullable TextDirection? textDirection,
+      @nullable TextDecorationStyle? textDecorationStyle,
+      @nullable double? textDecorationThickness,
+      @nullable Color? textDecorationColor,
+      @nullable SleekTextPredefinedStyle? predefinedStyle,
+      @nullable SleekTextPredefinedStyleLevel? predefinedLevel,
+      @nullable TextDecoration? textDecoration,
+      @nullable double? letterSpacing,
+      @nullable SleekFontSize? size,
+      @nullable SleekFontWeight? weight,
+      @nullable SleekFontFamily? family,
+      @nullable Widget Function(BuildContext, Widget)? builder});
 }
 
 class _$SleekTextStyleCopyWithImpl<$Res>
@@ -109,59 +109,59 @@ class _$SleekTextStyleCopyWithImpl<$Res>
 
   final SleekTextStyle _value;
   // ignore: unused_field
-  final $Res Function(SleekTextStyle) _then;
+  final $Res Function(SleekTextStyle?) _then;
 
   @override
   $Res call({
-    Object color = freezed,
-    Object textAlign = freezed,
-    Object textDirection = freezed,
-    Object textDecorationStyle = freezed,
-    Object textDecorationThickness = freezed,
-    Object textDecorationColor = freezed,
-    Object predefinedStyle = freezed,
-    Object predefinedLevel = freezed,
-    Object textDecoration = freezed,
-    Object letterSpacing = freezed,
-    Object size = freezed,
-    Object weight = freezed,
-    Object family = freezed,
-    Object builder = freezed,
+    Object? color = freezed,
+    Object? textAlign = freezed,
+    Object? textDirection = freezed,
+    Object? textDecorationStyle = freezed,
+    Object? textDecorationThickness = freezed,
+    Object? textDecorationColor = freezed,
+    Object? predefinedStyle = freezed,
+    Object? predefinedLevel = freezed,
+    Object? textDecoration = freezed,
+    Object? letterSpacing = freezed,
+    Object? size = freezed,
+    Object? weight = freezed,
+    Object? family = freezed,
+    Object? builder = freezed,
   }) {
     return _then(_value.copyWith(
-      color: color == freezed ? _value.color : color as Color,
+      color: color == freezed ? _value.color : color as Color?,
       textAlign:
-          textAlign == freezed ? _value.textAlign : textAlign as TextAlign,
+          textAlign == freezed ? _value.textAlign : textAlign as TextAlign?,
       textDirection: textDirection == freezed
           ? _value.textDirection
-          : textDirection as TextDirection,
+          : textDirection as TextDirection?,
       textDecorationStyle: textDecorationStyle == freezed
           ? _value.textDecorationStyle
-          : textDecorationStyle as TextDecorationStyle,
+          : textDecorationStyle as TextDecorationStyle?,
       textDecorationThickness: textDecorationThickness == freezed
           ? _value.textDecorationThickness
-          : textDecorationThickness as double,
+          : textDecorationThickness as double?,
       textDecorationColor: textDecorationColor == freezed
           ? _value.textDecorationColor
-          : textDecorationColor as Color,
+          : textDecorationColor as Color?,
       predefinedStyle: predefinedStyle == freezed
           ? _value.predefinedStyle
-          : predefinedStyle as SleekTextPredefinedStyle,
+          : predefinedStyle as SleekTextPredefinedStyle?,
       predefinedLevel: predefinedLevel == freezed
           ? _value.predefinedLevel
-          : predefinedLevel as SleekTextPredefinedStyleLevel,
+          : predefinedLevel as SleekTextPredefinedStyleLevel?,
       textDecoration: textDecoration == freezed
           ? _value.textDecoration
-          : textDecoration as TextDecoration,
+          : textDecoration as TextDecoration?,
       letterSpacing: letterSpacing == freezed
           ? _value.letterSpacing
-          : letterSpacing as double,
-      size: size == freezed ? _value.size : size as SleekFontSize,
-      weight: weight == freezed ? _value.weight : weight as SleekFontWeight,
-      family: family == freezed ? _value.family : family as SleekFontFamily,
+          : letterSpacing as double?,
+      size: size == freezed ? _value.size : size as SleekFontSize?,
+      weight: weight == freezed ? _value.weight : weight as SleekFontWeight?,
+      family: family == freezed ? _value.family : family as SleekFontFamily?,
       builder: builder == freezed
           ? _value.builder
-          : builder as Widget Function(BuildContext, Widget),
+          : builder as Widget Function(BuildContext, Widget)?,
     ));
   }
 }
@@ -173,20 +173,20 @@ abstract class _$SleekTextStyleCopyWith<$Res>
       __$SleekTextStyleCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@nullable Color color,
-      @nullable TextAlign textAlign,
-      @nullable TextDirection textDirection,
-      @nullable TextDecorationStyle textDecorationStyle,
-      @nullable double textDecorationThickness,
-      @nullable Color textDecorationColor,
-      @nullable SleekTextPredefinedStyle predefinedStyle,
-      @nullable SleekTextPredefinedStyleLevel predefinedLevel,
-      @nullable TextDecoration textDecoration,
-      @nullable double letterSpacing,
-      @nullable SleekFontSize size,
-      @nullable SleekFontWeight weight,
-      @nullable SleekFontFamily family,
-      @nullable Widget Function(BuildContext, Widget) builder});
+      {@nullable Color? color,
+      @nullable TextAlign? textAlign,
+      @nullable TextDirection? textDirection,
+      @nullable TextDecorationStyle? textDecorationStyle,
+      @nullable double? textDecorationThickness,
+      @nullable Color? textDecorationColor,
+      @nullable SleekTextPredefinedStyle? predefinedStyle,
+      @nullable SleekTextPredefinedStyleLevel? predefinedLevel,
+      @nullable TextDecoration? textDecoration,
+      @nullable double? letterSpacing,
+      @nullable SleekFontSize? size,
+      @nullable SleekFontWeight? weight,
+      @nullable SleekFontFamily? family,
+      @nullable Widget Function(BuildContext, Widget)? builder});
 }
 
 class __$SleekTextStyleCopyWithImpl<$Res>
@@ -201,55 +201,55 @@ class __$SleekTextStyleCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object color = freezed,
-    Object textAlign = freezed,
-    Object textDirection = freezed,
-    Object textDecorationStyle = freezed,
-    Object textDecorationThickness = freezed,
-    Object textDecorationColor = freezed,
-    Object predefinedStyle = freezed,
-    Object predefinedLevel = freezed,
-    Object textDecoration = freezed,
-    Object letterSpacing = freezed,
-    Object size = freezed,
-    Object weight = freezed,
-    Object family = freezed,
-    Object builder = freezed,
+    Object? color = freezed,
+    Object? textAlign = freezed,
+    Object? textDirection = freezed,
+    Object? textDecorationStyle = freezed,
+    Object? textDecorationThickness = freezed,
+    Object? textDecorationColor = freezed,
+    Object? predefinedStyle = freezed,
+    Object? predefinedLevel = freezed,
+    Object? textDecoration = freezed,
+    Object? letterSpacing = freezed,
+    Object? size = freezed,
+    Object? weight = freezed,
+    Object? family = freezed,
+    Object? builder = freezed,
   }) {
     return _then(_SleekTextStyle(
-      color: color == freezed ? _value.color : color as Color,
+      color: color == freezed ? _value.color : color as Color?,
       textAlign:
-          textAlign == freezed ? _value.textAlign : textAlign as TextAlign,
+          textAlign == freezed ? _value.textAlign : textAlign as TextAlign?,
       textDirection: textDirection == freezed
           ? _value.textDirection
-          : textDirection as TextDirection,
+          : textDirection as TextDirection?,
       textDecorationStyle: textDecorationStyle == freezed
           ? _value.textDecorationStyle
-          : textDecorationStyle as TextDecorationStyle,
+          : textDecorationStyle as TextDecorationStyle?,
       textDecorationThickness: textDecorationThickness == freezed
           ? _value.textDecorationThickness
-          : textDecorationThickness as double,
+          : textDecorationThickness as double?,
       textDecorationColor: textDecorationColor == freezed
           ? _value.textDecorationColor
-          : textDecorationColor as Color,
+          : textDecorationColor as Color?,
       predefinedStyle: predefinedStyle == freezed
           ? _value.predefinedStyle
-          : predefinedStyle as SleekTextPredefinedStyle,
+          : predefinedStyle as SleekTextPredefinedStyle?,
       predefinedLevel: predefinedLevel == freezed
           ? _value.predefinedLevel
-          : predefinedLevel as SleekTextPredefinedStyleLevel,
+          : predefinedLevel as SleekTextPredefinedStyleLevel?,
       textDecoration: textDecoration == freezed
           ? _value.textDecoration
-          : textDecoration as TextDecoration,
+          : textDecoration as TextDecoration?,
       letterSpacing: letterSpacing == freezed
           ? _value.letterSpacing
-          : letterSpacing as double,
-      size: size == freezed ? _value.size : size as SleekFontSize,
-      weight: weight == freezed ? _value.weight : weight as SleekFontWeight,
-      family: family == freezed ? _value.family : family as SleekFontFamily,
+          : letterSpacing as double?,
+      size: size == freezed ? _value.size : size as SleekFontSize?,
+      weight: weight == freezed ? _value.weight : weight as SleekFontWeight?,
+      family: family == freezed ? _value.family : family as SleekFontFamily?,
       builder: builder == freezed
           ? _value.builder
-          : builder as Widget Function(BuildContext, Widget),
+          : builder as Widget Function(BuildContext, Widget)?,
     ));
   }
 }
@@ -275,46 +275,46 @@ class _$_SleekTextStyle
 
   @override
   @nullable
-  final Color color;
+  final Color? color;
   @override
   @nullable
-  final TextAlign textAlign;
+  final TextAlign? textAlign;
   @override
   @nullable
-  final TextDirection textDirection;
+  final TextDirection? textDirection;
   @override
   @nullable
-  final TextDecorationStyle textDecorationStyle;
+  final TextDecorationStyle? textDecorationStyle;
   @override
   @nullable
-  final double textDecorationThickness;
+  final double? textDecorationThickness;
   @override
   @nullable
-  final Color textDecorationColor;
+  final Color? textDecorationColor;
   @override
   @nullable
-  final SleekTextPredefinedStyle predefinedStyle;
+  final SleekTextPredefinedStyle? predefinedStyle;
   @override
   @nullable
-  final SleekTextPredefinedStyleLevel predefinedLevel;
+  final SleekTextPredefinedStyleLevel? predefinedLevel;
   @override
   @nullable
-  final TextDecoration textDecoration;
+  final TextDecoration? textDecoration;
   @override
   @nullable
-  final double letterSpacing;
+  final double? letterSpacing;
   @override
   @nullable
-  final SleekFontSize size;
+  final SleekFontSize? size;
   @override
   @nullable
-  final SleekFontWeight weight;
+  final SleekFontWeight? weight;
   @override
   @nullable
-  final SleekFontFamily family;
+  final SleekFontFamily? family;
   @override
   @nullable
-  final Widget Function(BuildContext, Widget) builder;
+  final Widget Function(BuildContext, Widget)? builder;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -412,64 +412,64 @@ class _$_SleekTextStyle
 
 abstract class _SleekTextStyle implements SleekTextStyle {
   const factory _SleekTextStyle(
-          {@nullable Color color,
-          @nullable TextAlign textAlign,
-          @nullable TextDirection textDirection,
-          @nullable TextDecorationStyle textDecorationStyle,
-          @nullable double textDecorationThickness,
-          @nullable Color textDecorationColor,
-          @nullable SleekTextPredefinedStyle predefinedStyle,
-          @nullable SleekTextPredefinedStyleLevel predefinedLevel,
-          @nullable TextDecoration textDecoration,
-          @nullable double letterSpacing,
-          @nullable SleekFontSize size,
-          @nullable SleekFontWeight weight,
-          @nullable SleekFontFamily family,
-          @nullable Widget Function(BuildContext, Widget) builder}) =
+          {@nullable Color? color,
+          @nullable TextAlign? textAlign,
+          @nullable TextDirection? textDirection,
+          @nullable TextDecorationStyle? textDecorationStyle,
+          @nullable double? textDecorationThickness,
+          @nullable Color? textDecorationColor,
+          @nullable SleekTextPredefinedStyle? predefinedStyle,
+          @nullable SleekTextPredefinedStyleLevel? predefinedLevel,
+          @nullable TextDecoration? textDecoration,
+          @nullable double? letterSpacing,
+          @nullable SleekFontSize? size,
+          @nullable SleekFontWeight? weight,
+          @nullable SleekFontFamily? family,
+          @nullable Widget Function(BuildContext, Widget)? builder}) =
       _$_SleekTextStyle;
 
   @override
   @nullable
-  Color get color;
+  Color? get color;
   @override
   @nullable
-  TextAlign get textAlign;
+  TextAlign? get textAlign;
   @override
   @nullable
-  TextDirection get textDirection;
+  TextDirection? get textDirection;
   @override
   @nullable
-  TextDecorationStyle get textDecorationStyle;
+  TextDecorationStyle? get textDecorationStyle;
   @override
   @nullable
-  double get textDecorationThickness;
+  double? get textDecorationThickness;
   @override
   @nullable
-  Color get textDecorationColor;
+  Color? get textDecorationColor;
   @override
   @nullable
-  SleekTextPredefinedStyle get predefinedStyle;
+  SleekTextPredefinedStyle? get predefinedStyle;
   @override
   @nullable
-  SleekTextPredefinedStyleLevel get predefinedLevel;
+  SleekTextPredefinedStyleLevel? get predefinedLevel;
   @override
   @nullable
-  TextDecoration get textDecoration;
+  TextDecoration? get textDecoration;
   @override
   @nullable
-  double get letterSpacing;
+  double? get letterSpacing;
   @override
   @nullable
-  SleekFontSize get size;
+  SleekFontSize? get size;
   @override
   @nullable
-  SleekFontWeight get weight;
+  SleekFontWeight? get weight;
   @override
   @nullable
-  SleekFontFamily get family;
+  SleekFontFamily? get family;
   @override
   @nullable
-  Widget Function(BuildContext, Widget) get builder;
+  Widget Function(BuildContext, Widget)? get builder;
   @override
   _$SleekTextStyleCopyWith<_SleekTextStyle> get copyWith;
 }

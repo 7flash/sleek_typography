@@ -5,15 +5,15 @@ import 'text_style.dart';
 
 class SleekTypography extends StatefulWidget {
   final SleekTypographyData data;
-  final Widget child;
+  final Widget? child;
 
   const SleekTypography({
-    Key key,
+    Key? key,
     this.child,
-    @required this.data,
+    required this.data,
   }) : super(key: key);
 
-  static SleekTypographyData of(BuildContext context) {
+  static SleekTypographyData? of(BuildContext context) {
     final provider =
         context.dependOnInheritedWidgetOfExactType<SleekTypographyProvider>();
     if (provider == null) return SleekTypographyData.fallback();
@@ -36,7 +36,7 @@ class SleekTypography extends StatefulWidget {
 }
 
 class _SleekTypographyState extends State<SleekTypography> {
-  SleekTypographyData _data;
+  SleekTypographyData? _data;
 
   @override
   void initState() {
@@ -55,18 +55,18 @@ class _SleekTypographyState extends State<SleekTypography> {
       value: value,
       child: DefaultTextStyle(
         style: value.styles.body.level3.toTextStyle(context, typography: value),
-        child: widget.child,
+        child: widget.child!,
       ),
     );
   }
 }
 
 class SleekTypographyProvider extends InheritedWidget {
-  final SleekTypographyData value;
+  final SleekTypographyData? value;
 
   SleekTypographyProvider({
-    Key key,
-    Widget child,
+    Key? key,
+    required Widget child,
     this.value,
   }) : super(
           key: key,

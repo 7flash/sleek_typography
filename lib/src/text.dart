@@ -4,12 +4,12 @@ import 'package:sleek_typography/src/typography.dart';
 import 'text_style.dart';
 
 class SleekText extends StatelessWidget {
-  final SleekTextStyle style;
+  final SleekTextStyle? style;
   final String data;
 
   const SleekText(
     this.data, {
-    Key key,
+    Key? key,
     this.style,
   }) : assert(data != null);
 
@@ -26,7 +26,7 @@ class SleekText extends StatelessWidget {
         defaultTextStyle.textAlign;
 
     final builder = (this.style?.builder ?? style.builder);
-    final textStyle = this.style.toTextStyle(context, typography: typography);
+    final textStyle = this.style!.toTextStyle(context, typography: typography);
 
     Widget result = Text(
       data,

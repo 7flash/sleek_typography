@@ -17,27 +17,27 @@ typedef Widget SleekTextStyleWidgetBuilder(BuildContext context, Widget child);
 @freezed
 abstract class SleekTextStyle with _$SleekTextStyle {
   const factory SleekTextStyle({
-    @nullable Color color,
-    @nullable TextAlign textAlign,
-    @nullable TextDirection textDirection,
-    @nullable TextDecorationStyle textDecorationStyle,
-    @nullable double textDecorationThickness,
-    @nullable Color textDecorationColor,
-    @nullable SleekTextPredefinedStyle predefinedStyle,
-    @nullable SleekTextPredefinedStyleLevel predefinedLevel,
-    @nullable TextDecoration textDecoration,
-    @nullable double letterSpacing,
-    @nullable SleekFontSize size,
-    @nullable SleekFontWeight weight,
-    @nullable SleekFontFamily family,
-    @nullable SleekTextStyleWidgetBuilder builder,
+    @nullable Color? color,
+    @nullable TextAlign? textAlign,
+    @nullable TextDirection? textDirection,
+    @nullable TextDecorationStyle? textDecorationStyle,
+    @nullable double? textDecorationThickness,
+    @nullable Color? textDecorationColor,
+    @nullable SleekTextPredefinedStyle? predefinedStyle,
+    @nullable SleekTextPredefinedStyleLevel? predefinedLevel,
+    @nullable TextDecoration? textDecoration,
+    @nullable double? letterSpacing,
+    @nullable SleekFontSize? size,
+    @nullable SleekFontWeight? weight,
+    @nullable SleekFontFamily? family,
+    @nullable SleekTextStyleWidgetBuilder? builder,
   }) = _SleekTextStyle;
 
   // Predefined : caption
 
   factory SleekTextStyle.caption({
-    Color color,
-    SleekTextPredefinedStyleLevel level,
+    Color? color,
+    SleekTextPredefinedStyleLevel? level,
   }) =>
       SleekTextStyle(
         color: color,
@@ -46,7 +46,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.caption1({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.caption(
         color: color,
@@ -54,7 +54,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.caption2({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.caption(
         color: color,
@@ -62,7 +62,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.caption3({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.caption(
         color: color,
@@ -70,7 +70,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.caption4({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.caption(
         color: color,
@@ -78,7 +78,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.caption5({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.caption(
         color: color,
@@ -86,7 +86,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.caption6({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.caption(
         color: color,
@@ -96,8 +96,8 @@ abstract class SleekTextStyle with _$SleekTextStyle {
   // Predefined : body
 
   factory SleekTextStyle.body({
-    Color color,
-    SleekTextPredefinedStyleLevel level,
+    Color? color,
+    SleekTextPredefinedStyleLevel? level,
   }) =>
       SleekTextStyle(
         color: color,
@@ -106,7 +106,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.body1({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.body(
         color: color,
@@ -114,7 +114,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.body2({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.body(
         color: color,
@@ -122,7 +122,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.body3({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.body(
         color: color,
@@ -130,7 +130,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.body4({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.body(
         color: color,
@@ -138,7 +138,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.body5({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.body(
         color: color,
@@ -146,7 +146,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.body6({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.body(
         color: color,
@@ -156,8 +156,8 @@ abstract class SleekTextStyle with _$SleekTextStyle {
   // Predefined : code
 
   factory SleekTextStyle.code({
-    Color color,
-    SleekTextPredefinedStyleLevel level,
+    Color? color,
+    SleekTextPredefinedStyleLevel? level,
   }) =>
       SleekTextStyle(
         color: color,
@@ -166,7 +166,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.code1({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.code(
         color: color,
@@ -174,7 +174,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.code2({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.code(
         color: color,
@@ -182,7 +182,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.code3({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.code(
         color: color,
@@ -190,7 +190,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.code4({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.code(
         color: color,
@@ -198,7 +198,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.code5({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.code(
         color: color,
@@ -206,7 +206,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.code6({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.code(
         color: color,
@@ -216,8 +216,8 @@ abstract class SleekTextStyle with _$SleekTextStyle {
   // Predefined : blockquote
 
   factory SleekTextStyle.blockquote({
-    Color color,
-    SleekTextPredefinedStyleLevel level,
+    Color? color,
+    SleekTextPredefinedStyleLevel? level,
   }) =>
       SleekTextStyle(
         color: color,
@@ -226,7 +226,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.blockquote1({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.blockquote(
         color: color,
@@ -234,7 +234,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.blockquote2({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.blockquote(
         color: color,
@@ -242,7 +242,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.blockquote3({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.blockquote(
         color: color,
@@ -250,7 +250,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.blockquote4({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.blockquote(
         color: color,
@@ -258,7 +258,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.blockquote5({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.blockquote(
         color: color,
@@ -266,7 +266,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.blockquote6({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.blockquote(
         color: color,
@@ -276,8 +276,8 @@ abstract class SleekTextStyle with _$SleekTextStyle {
   // Predefined : button
 
   factory SleekTextStyle.button({
-    Color color,
-    SleekTextPredefinedStyleLevel level,
+    Color? color,
+    SleekTextPredefinedStyleLevel? level,
   }) =>
       SleekTextStyle(
         color: color,
@@ -286,7 +286,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.button1({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.button(
         color: color,
@@ -294,7 +294,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.button2({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.button(
         color: color,
@@ -302,7 +302,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.button3({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.button(
         color: color,
@@ -310,7 +310,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.button4({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.button(
         color: color,
@@ -318,7 +318,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.button5({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.button(
         color: color,
@@ -326,7 +326,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.button6({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.button(
         color: color,
@@ -336,8 +336,8 @@ abstract class SleekTextStyle with _$SleekTextStyle {
   // Predefined : link
 
   factory SleekTextStyle.link({
-    Color color,
-    SleekTextPredefinedStyleLevel level,
+    Color? color,
+    SleekTextPredefinedStyleLevel? level,
   }) =>
       SleekTextStyle(
         color: color,
@@ -346,7 +346,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.link1({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.link(
         color: color,
@@ -354,7 +354,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.link2({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.link(
         color: color,
@@ -362,7 +362,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.link3({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.link(
         color: color,
@@ -370,7 +370,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.link4({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.link(
         color: color,
@@ -378,7 +378,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.link5({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.link(
         color: color,
@@ -386,7 +386,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.link6({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.link(
         color: color,
@@ -396,8 +396,8 @@ abstract class SleekTextStyle with _$SleekTextStyle {
   // Predefined : title
 
   factory SleekTextStyle.title({
-    Color color,
-    SleekTextPredefinedStyleLevel level,
+    Color? color,
+    SleekTextPredefinedStyleLevel? level,
   }) =>
       SleekTextStyle(
         color: color,
@@ -406,7 +406,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.title1({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.title(
         color: color,
@@ -414,7 +414,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.title2({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.title(
         color: color,
@@ -422,7 +422,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.title3({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.title(
         color: color,
@@ -430,7 +430,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.title4({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.title(
         color: color,
@@ -438,7 +438,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.title5({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.title(
         color: color,
@@ -446,7 +446,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.title6({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.title(
         color: color,
@@ -456,8 +456,8 @@ abstract class SleekTextStyle with _$SleekTextStyle {
   // Predefined : subtitle
 
   factory SleekTextStyle.subtitle({
-    Color color,
-    SleekTextPredefinedStyleLevel level,
+    Color? color,
+    SleekTextPredefinedStyleLevel? level,
   }) =>
       SleekTextStyle(
         color: color,
@@ -466,7 +466,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.subtitle1({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.subtitle(
         color: color,
@@ -474,7 +474,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.subtitle2({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.subtitle(
         color: color,
@@ -482,7 +482,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.subtitle3({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.subtitle(
         color: color,
@@ -490,7 +490,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.subtitle4({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.subtitle(
         color: color,
@@ -498,7 +498,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.subtitle5({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.subtitle(
         color: color,
@@ -506,7 +506,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.subtitle6({
-    Color color,
+    Color? color,
   }) =>
       SleekTextStyle.subtitle(
         color: color,
@@ -516,16 +516,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
   // Basic
 
   factory SleekTextStyle.normal1({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -548,16 +548,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.medium1({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -580,16 +580,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.light1({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -612,16 +612,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.bold1({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -644,16 +644,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.normal2({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -676,16 +676,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.medium2({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -708,16 +708,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.light2({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -740,16 +740,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.bold2({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -772,16 +772,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.normal3({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -804,16 +804,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.medium3({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -836,16 +836,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.light3({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -868,16 +868,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.bold3({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -900,16 +900,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.normal4({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -932,16 +932,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.medium4({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -964,16 +964,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.light4({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -996,16 +996,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.bold4({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1028,16 +1028,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.normal5({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1060,16 +1060,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.medium5({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1092,16 +1092,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.light5({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1124,16 +1124,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.bold5({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1156,16 +1156,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.normal6({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1188,16 +1188,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.medium6({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1220,16 +1220,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.light6({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1252,16 +1252,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.bold6({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1284,16 +1284,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.normal7({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1316,16 +1316,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.medium7({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1348,16 +1348,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.light7({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1380,16 +1380,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.bold7({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1412,16 +1412,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.normal8({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1444,16 +1444,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.medium8({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1476,16 +1476,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.light8({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1508,16 +1508,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.bold8({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1540,16 +1540,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.normal9({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1572,16 +1572,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.medium9({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1604,16 +1604,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.light9({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1636,16 +1636,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.bold9({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1668,16 +1668,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.normal10({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1700,16 +1700,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.medium10({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1732,16 +1732,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.light10({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1764,16 +1764,16 @@ abstract class SleekTextStyle with _$SleekTextStyle {
       );
 
   factory SleekTextStyle.bold10({
-    Color color,
-    bool isUnderlined,
-    TextDirection textDirection,
-    SleekTextStyleWidgetBuilder builder,
-    TextDecoration textDecoration,
-    TextDecorationStyle textDecorationStyle,
-    double textDecorationThickness,
-    Color textDecorationColor,
-    double letterSpacing,
-    TextAlign textAlign,
+    Color? color,
+    bool? isUnderlined,
+    TextDirection? textDirection,
+    SleekTextStyleWidgetBuilder? builder,
+    TextDecoration? textDecoration,
+    TextDecorationStyle? textDecorationStyle,
+    double? textDecorationThickness,
+    Color? textDecorationColor,
+    double? letterSpacing,
+    TextAlign? textAlign,
     SleekFontFamily family = SleekFontFamily.primary,
   }) =>
       SleekTextStyle(
@@ -1798,7 +1798,7 @@ abstract class SleekTextStyle with _$SleekTextStyle {
 
 extension SleekTextStyleExtensions on SleekTextStyle {
   SleekTextStyle loadPredefined(BuildContext context,
-      {SleekTypographyData typography}) {
+      {SleekTypographyData? typography}) {
     assert(context != null || typography != null);
     typography ??= SleekTypography.of(context);
     if (this.predefinedStyle != null &&
@@ -1811,7 +1811,7 @@ extension SleekTextStyleExtensions on SleekTextStyle {
   }
 
   TextStyle toTextStyle(BuildContext context,
-      {SleekTypographyData typography}) {
+      {SleekTypographyData? typography}) {
     assert(context != null || typography != null);
     typography ??= SleekTypography.of(context);
 
@@ -1821,13 +1821,13 @@ extension SleekTextStyleExtensions on SleekTextStyle {
         DefaultTextStyle.of(context)?.style?.color;
     final fontFamily =
         (this.family ?? style.family)?.toFontFamily(typography: typography) ??
-            typography.families.primary;
+            typography!.families.primary;
     final fontSize =
         (this.size ?? style.size)?.toPoints(typography: typography) ??
-            typography.sizes.size3;
+            typography!.sizes.size3;
     final fontWeight =
         (this.weight ?? style.weight)?.toFontWeight(typography: typography) ??
-            typography.weights.normal;
+            typography!.weights.normal;
     final textDecoration = (this.textDecoration ?? style.textDecoration);
     final textDecorationStyle =
         (this.textDecorationStyle ?? style.textDecorationStyle);

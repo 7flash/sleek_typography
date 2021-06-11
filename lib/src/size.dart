@@ -16,32 +16,32 @@ enum SleekFontSize {
 }
 
 extension SleekFontSizeExtensions on SleekFontSize {
-  double toPoints({BuildContext context, SleekTypographyData typography}) {
+  double toPoints({required BuildContext context, SleekTypographyData? typography}) {
     assert(context != null || typography != null);
     typography ??= SleekTypography.of(context);
     switch (this) {
       case SleekFontSize.size1:
-        return typography.sizes.size1;
+        return typography!.sizes.size1;
       case SleekFontSize.size2:
-        return typography.sizes.size2;
+        return typography!.sizes.size2;
       case SleekFontSize.size3:
-        return typography.sizes.size3;
+        return typography!.sizes.size3;
       case SleekFontSize.size4:
-        return typography.sizes.size4;
+        return typography!.sizes.size4;
       case SleekFontSize.size5:
-        return typography.sizes.size5;
+        return typography!.sizes.size5;
       case SleekFontSize.size6:
-        return typography.sizes.size6;
+        return typography!.sizes.size6;
       case SleekFontSize.size7:
-        return typography.sizes.size7;
+        return typography!.sizes.size7;
       case SleekFontSize.size8:
-        return typography.sizes.size8;
+        return typography!.sizes.size8;
       case SleekFontSize.size9:
-        return typography.sizes.size9;
+        return typography!.sizes.size9;
       case SleekFontSize.size10:
-        return typography.sizes.size10;
+        return typography!.sizes.size10;
       default:
-        return typography.sizes.size3;
+        return typography!.sizes.size3;
     }
   }
 }
